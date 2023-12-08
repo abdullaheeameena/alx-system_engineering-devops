@@ -1,0 +1,8 @@
+#!/bin/bash
+
+apt-get update
+apt-get install -y nginx
+cp /etc/nginx/sites-available/default /etc/nginx/sites-available/default.bak
+sed -i 's/listen [::]:80 default_server;/listen 80 default_server;/g' /etc/nginx/sites-available/default
+service nginx restart
+
