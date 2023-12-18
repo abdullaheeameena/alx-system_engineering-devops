@@ -1,0 +1,56 @@
+Certainly! Below is a template for the blog post explaining what happens when you type https://www.google.com in your browser and press Enter.
+
+---
+
+## The Journey of a URL: Exploring the Web Stack
+
+### Introduction
+
+Have you ever wondered what happens behind the scenes when you type a URL into your browser and hit Enter? In this blog post, we'll unravel the intricate steps that occur from the moment you initiate a request to the final rendering of a web page. Let's dive into the fascinating world of web infrastructure.
+
+### DNS Request
+
+The journey begins with a Domain Name System (DNS) request. When you type "https://www.google.com," your browser queries DNS servers to translate the human-readable domain name into an IP address. This step is crucial for locating the server on the internet.
+
+### TCP/IP
+
+With the IP address in hand, your browser initiates a connection using the Transmission Control Protocol (TCP) and the Internet Protocol (IP). TCP ensures a reliable, ordered, and error-checked connection, while IP facilitates communication between devices on a network.
+
+### Firewall
+
+As the connection is established, data passes through firewalls, acting as security barriers. Firewalls monitor and control incoming and outgoing network traffic, safeguarding against potential threats and unauthorized access.
+
+### HTTPS/SSL
+
+If the website uses HTTPS, a secure handshake occurs between the browser and the server. This involves the use of SSL/TLS protocols to encrypt the data exchanged, ensuring a secure connection. Encryption is vital for protecting sensitive information during transmission.
+
+### Load-Balancer
+
+Many popular websites, including Google, employ load balancers. Load balancers distribute incoming network traffic across multiple servers to prevent overload and enhance reliability. This ensures a seamless user experience, especially during high traffic periods.
+
+### Web Server
+
+The load balancer directs the request to one of several web servers hosting the website. The web server processes the request, retrieves the requested web page or resource, and sends it back to the browser through the established connection.
+
+### Application Server
+
+For dynamic websites, an application server comes into play. It processes business logic, interacts with databases, and generates dynamic content based on user interactions. This adds a layer of interactivity and personalization to the web page.
+
+### Database
+
+If the requested information involves data retrieval or storage, the application server communicates with a database. The database stores and retrieves data, ensuring that dynamic content is generated accurately.
+
+### Conclusion
+
+In conclusion, the journey from typing a URL to viewing a web page is a complex orchestration involving DNS resolution, secure connections, load balancing, and interactions between various servers and databases. Understanding this process provides insight into the robust infrastructure that enables seamless web browsing.
+
+For a visual representation of this journey, refer to the diagram below:
+
+![Web Stack Diagram](URL_OF_YOUR_DIAGRAM_IMAGE)
+
+Explore the interconnected layers of the web stack, and the next time you press Enter, envision the intricate dance of technology bringing the web to your fingertips.
+
+---
+
+### Diagram
+
