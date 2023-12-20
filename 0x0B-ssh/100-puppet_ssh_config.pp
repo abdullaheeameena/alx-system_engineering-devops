@@ -2,17 +2,10 @@
 # usin puppet to connect without using password
 file { 'etc/ssh/ssh_config':
    ensure => present,
-}
 
-file_line { 'Turn off passwd auth':
-    path => '/etc/ssh/ss_config',
-    line => 'PasswordAuthentication no',
-    match => '^#PasswordAuthentication',
+content =>"
+	#SSH client configuration
+	host"
+	Identityfile ~/.ssh/school
+	PasswordAuthentication no
 }
-
-file_line { 'Declare identity file',
-     path => '/etc/ssh/ss_config',
-     line => 'IdentityFile ~/.ssh/school',
-     match => '^#IdentityFile',
-}
-
